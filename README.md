@@ -2,4 +2,7 @@
 
 ## Unity
 
-- Ensure your camera background is fully opaque. Android's OS UI could become visible "behind the game" otherwise. Relevant as of Unity 2020.2.1f1.
+### Android
+
+- Disable "Project Settings > Player > Android > Resolution and Presentation > Render Over Native UI"
+    - Otherwise some devices will have their OS visible behind the game
