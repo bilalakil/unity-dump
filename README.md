@@ -16,6 +16,6 @@
     - You'll probably need to change the editor version
 
 ```bash
-cd /c/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/platform-tools
+cd "/c/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/platform-tools"
 ./adb.exe logcat -s Unity
 ```
