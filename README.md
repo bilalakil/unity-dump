@@ -6,6 +6,7 @@
 
 - Check "Bottom" in "Project Settings > Player > iOS > Other Settings > Defer system gestures on edges"
     - Otherwise the home indicator on some iPhones will be too easy to activate
+    - Counter-intuitively, you must leave the "Hide home button on iPhone X" option unchecked, as this enables a different (undersired) behaviour, where the home indicator isn't visible until touched, but then still too easy to activate (in spite of the "Defer system gestures on edges" setting)
 
 ### Android
 
