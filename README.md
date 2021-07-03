@@ -2,6 +2,10 @@
 
 ## Unity
 
+- Use TextMeshPro instead of the legacy Text components
+    - Each time you update the TextMeshPro package, you should also re-import the TMPro Essentials.
+    - Although re-import supposedly works on top of existing files, I've encountered issues with that before (where files were split into different folders and lookups failed). Instead, delete the current essentials and do a clean import.
+
 ### iOS
 
 - Check "Bottom" in "Project Settings > Player > iOS > Other Settings > Defer system gestures on edges"
