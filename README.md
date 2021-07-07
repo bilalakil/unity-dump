@@ -23,3 +23,10 @@
 cd "/c/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/platform-tools"
 ./adb.exe logcat -s Unity
 ```
+
+### Other
+
+- If using CloudOnce:
+    - When installing for the first time, be sure to switch to the PC platform to avoid a `GooglePlayServices` missing exception. From there, you can update the External Dependency Manager (at the bottom of the Assets menu) and then switch to Android.
+    - The External Dependency Manager seems to ignore the Android SDK that's linked to Unity's preferences, and uses `JAVA_HOME` instead.
+    - Changes to `JAVA_HOME` aren't picked up by the External Dependency Manager even after restarting Unity. I restarted my entire PC for this to work. 
