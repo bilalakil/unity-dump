@@ -22,6 +22,9 @@
 ```bash
 cd "/c/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/platform-tools"
 ./adb.exe logcat -s Unity
+
+# or if you've got JAVA_HOME set up using a Unity Android player:
+"$JAVA_HOME/../SDK/platform-tools/adb.exe" logcat -s Unity
 ```
 
 ### Other
