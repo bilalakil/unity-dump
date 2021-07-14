@@ -27,6 +27,12 @@ cd "/c/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/PlaybackEngines/And
 "$JAVA_HOME/../SDK/platform-tools/adb.exe" logcat -s Unity
 ```
 
+### WebGL
+
+- "File"/other persistent changes are synced to the browser's indexed DB, but (by default) only when Unity internally thinks it should sync it. This means you can successfully write a file, and then exit the application, and that write can be lost.
+    - See [this StackOverflow Q&A for a solution](https://gamedev.stackexchange.com/questions/184369/file-saved-to-indexeddb-lost-unless-we-change-scenes)
+    - This has also been solved in [MyLibrary.KVS](https://github.com/bilalakil/my-unity-library/commit/7c1bd6c691cc201115b3ce9c244a8a8ee0b27564)
+
 ### Other
 
 - If using CloudOnce:
