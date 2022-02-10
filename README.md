@@ -2,6 +2,7 @@
 
 ## Unity
 
+- Set an `Application.targetFrameRate` because it can sometimes default to 30 and make a game feel bad, even on more powerful devices
 - Use TextMeshPro instead of the legacy Text components
     - Each time you update the TextMeshPro package, you should also re-import the TMPro Essentials.
     - Although re-import supposedly works on top of existing files, I've encountered issues with that before (where files were split into different folders and lookups failed). Instead, delete the current essentials and do a clean import.
